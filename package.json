@@ -1,6 +1,7 @@
 {
   "type": "module",
   "dependencies": {
-    "better-sqlite3": "^8.5.0"
+    "better-sqlite3": "^8.5.0",
+    "slugify": "^1.6.6"
   }
 }
