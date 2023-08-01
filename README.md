@@ -8,6 +8,8 @@ This script exports:
 * Your collections of books
 * Your annotations (and books linked)
 
+Tested on macOS Ventura 13.x (Apple Books 5.0).
+
 ## Install
 
 ```
