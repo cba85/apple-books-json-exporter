@@ -15,14 +15,11 @@ const getDatabaseFile = async (directory) => {
     process.exit(1);
   }
 
-  for (const file of files) {
-    const fileFragments = file.split(".");
-    const suffix = fileFragments.pop();
+  const dbFilename = files
+    .filter((filename) => filename.endsWith(".sqlite"))
+    .slice(-1);
 
-    if (suffix == "sqlite") {
-      databaseFile = `${directory}/${file}`;
-    }
-  }
+  databaseFile = `${directory}/${dbFilename}`;
 
   return databaseFile;
 };
